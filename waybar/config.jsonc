@@ -1,0 +1,50 @@
+
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+// Sleek
+
+{
+"output": "eDP-1",
+"include": "~/.config/waybar/modules.jsonc",
+"layer": "overlay",
+"position": "top",
+"height": 0,
+"mod": "dock",
+"exclusive": true,
+"passthrough": false,
+"ipc":true,
+"spacing":8,
+"modules-left": [
+  "custom/menu",
+	"hyprland/workspaces",
+	"clock",
+	"custom/weather"
+],
+
+"modules-center": [		
+	"hyprland/window"
+],
+		
+"modules-right": [
+	"tray",
+	"group/motherboard",
+	"group/laptop",
+	"group/audio",
+	"custom/swaync"
+	],
+
+
+// Additional format / customize modules
+
+"custom/power": {
+	"format": " ",
+	"icon-size": 20,
+  "on-click": "wlogout -C $HOME/.config/wlogout/nova.css -l $HOME/.config/wlogout/layout -b 5 -B 400 -T 400",
+	"tooltip": false
+},
+	
+"clock": {
+	//"format": "{:%I:%M %p - %d/%b}", //for AM/PM
+    "format": "{:%d - %H:%M}", // 24H
+	"tooltip": false
+}
+}

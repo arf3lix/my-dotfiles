@@ -1,0 +1,41 @@
+* {
+    /* Colores base */
+    background:                  {{background}};
+    foreground:                  {{foreground}};
+    
+    /* Estados normales */
+    normal-background:           {{background}};
+    normal-foreground:           {{foreground}};
+    
+    /* Estados activos */
+    active-background:           {{color1}};
+    active-foreground:           {{background}};
+    
+    /* Estados urgentes */
+    urgent-background:           {{color3}};
+    urgent-foreground:           {{background}};
+    
+    /* Estados seleccionados */
+    selected-normal-background:  {{color4}};
+    selected-normal-foreground:  {{background}};
+    selected-active-background:  {{color6}};
+    selected-active-foreground:  {{background}};
+    selected-urgent-background:  {{color5}};
+    selected-urgent-foreground:  {{background}};
+    
+    /* Alternos (para filas alternas) */
+    alternate-normal-background: {{background}};
+    alternate-normal-foreground: {{foreground}};
+    alternate-active-background: {{color1}};
+    alternate-active-foreground: {{background}};
+    alternate-urgent-background: {{color3}};
+    alternate-urgent-foreground: {{background}};
+    
+    /* Bordes y separadores */
+    separatorcolor:              {{color8}};
+    border-color:                {{color4}};
+    
+    /* Scrollbar */
+    scrollbar-handle:            {{color4}};
+    scrollbar-background:        {{color0}};
+}
