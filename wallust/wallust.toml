@@ -44,7 +44,7 @@ enabled = true
 [templates]
 colors-waybar = { template = "colors-waybar.css", target = "~/.cache/wallust/colors-waybar.css" }
 colors-hyprland = { template = "colors-hyprland.conf", target = "~/.cache/wallust/colors-hyprland.conf" }
-colors-ghostty = { template = "colors-ghostty.conf", target = "~/.cache/wallust/colors-ghostty.conf" }
+colors-ghostty = { template = "colors-ghostty.conf", target = "~/.config/ghostty/themes/wallust.conf" }
 colors-rofi = { template = "colors-rofi.rasi", target = "~/.cache/wallust/colors-rofi.rasi" }
 colors-swaync = { template = "colors-swaync.css", target = "~/.cache/wallust/colors-swaync.css" }
 gtk-colors = { template = "gtk-colors.css", target = "~/.cache/wallust/gtk-colors.css" }
