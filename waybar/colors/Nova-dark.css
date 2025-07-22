@@ -33,7 +33,7 @@
   font-weight: bold;
   min-height: 0;
   /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
-  font-size: 97%;
+  font-size: 100%;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
   padding: 1px;
 
@@ -114,8 +114,8 @@ window#waybar.fullscreen {
 #mode,
 #mpris,
 #network,
-#pulseaudio,
-#pulseaudio-slider,
+#wireplumber,
+#wireplumber-slider,
 #taskbar button,
 #taskbar,
 #temperature,
@@ -330,14 +330,14 @@ window#waybar.fullscreen {
   color: @color6;
 }
 
-#pulseaudio {
+#wireplumber {
   color: @color6;
 }
 
-#pulseaudio.bluetooth {
+#wireplumber.bluetooth {
   color: @color6;
 }
-#pulseaudio.muted {
+#wireplumber.muted {
   color: @color8;
 }
 
@@ -358,7 +358,7 @@ window#waybar.fullscreen {
   background-color: @color5;
   color: @text;
 }
-#pulseaudio-slider slider {
+#wireplumber-slider slider {
 	min-width: 0px;
 	min-height: 0px;
 	opacity: 0;
@@ -367,13 +367,13 @@ window#waybar.fullscreen {
 	box-shadow: none;
 }
 
-#pulseaudio-slider trough {
+#wireplumber-slider trough {
 	min-width: 80px;
 	min-height: 5px;
 	border-radius: 5px;
 }
 
-#pulseaudio-slider highlight {
+#wireplumber-slider highlight {
 	min-height: 10px;
 	border-radius: 5px;
 }

@@ -16,7 +16,7 @@ if [[ $monitor_count -eq 1 && "$active_monitors" == "eDP-1" ]]; then
     current_scale=$(hyprctl monitors -j | jq -r '.[] | select(.name=="eDP-1") | .scale')
     
     # Cambiar eDP-1 a escala 1.0 temporalmente
-    hyprctl keyword monitor "eDP-1,preferred,auto,1"
+    #hyprctl keyword monitor "eDP-1,preferred,auto,1"
     
     # Pequeña pausa para que se aplique el cambio
     sleep 0.2
@@ -25,7 +25,7 @@ if [[ $monitor_count -eq 1 && "$active_monitors" == "eDP-1" ]]; then
     wlogout -C $HOME/.config/wlogout/nova.css -l $HOME/.config/wlogout/layout -b 5 -B 400 -T 400
     
     # Restaurar escala original del eDP-1
-    hyprctl keyword monitor "eDP-1,preferred,auto,$current_scale"
+    # hyprctl keyword monitor "eDP-1,preferred,auto,$current_scale"
     
 else
     echo "Múltiples monitores detectados, ejecutando wlogout normalmente..."
