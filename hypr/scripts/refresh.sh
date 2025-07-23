@@ -1,17 +1,20 @@
 #!/usr/bin/env bash
-## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-killall waybar
+
+
+wal -i "/home/felix/.current_wallpaper" -s &
+
+killall hyprpaper &
+killall waybar &
 
 sleep 0.2
-# Relaunch waybar
-/home/felix/.config/hypr/scripts/update-monitor.sh &
+# Relaunch waybar and hyprpaper
 uwsm app -- waybar > /dev/null 2>&1 &
-
-notify-send "notificacion" "desde refresh script" &
+uwsm app -- hyprpaper &
 # reload swaync
 sleep 0.2
 swaync-client -R -rs &
 
-wal -i "/home/felix/.current_wallpaper" -s &
+sleep 0.2
+hyprctl reload
 
 
