@@ -11,13 +11,6 @@
     "on-click": "activate",
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
-    "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
-    },
     "format-icons": {
       "active": "",
       "default": ""
@@ -27,13 +20,14 @@
 
 
   
-"group/motherboard": {
+"group/stats": {
     "orientation": "horizontal",
     "modules": [
       "cpu",
       "memory",
       "temperature",
       "disk",
+      "network"
       ]	
 },
   
@@ -41,15 +35,16 @@
     "orientation": "horizontal",
     "modules": [
       "backlight",
-      "battery",
+      "hyprland/language",
+      "battery"
       ]	
 },
   
 "group/audio": {
     "orientation": "horizontal",
     "modules": [
-      "wireplumber",
-      "wireplumber#microphone"
+      "wireplumber#microphone",
+      "wireplumber"
       ]	
 },
  
@@ -156,27 +151,28 @@
 },
     
 "hyprland/language": {
-    "format": "Lang: {}",
+    "format": "  {}",
     "format-en": "US",
-    "format-tr": "Korea",
+    "format-es": "ES",
     "keyboard-name": "at-translated-set-2-keyboard",
     "on-click": "hyprctl switchxkblayout $SET_KB next"
 },
     
     
 "hyprland/window": {
-    "format": "{}",
-    "max-length": 40,// TODO: increase when able to put on lefts module
-    "separate-outputs": true,
-    "offscreen-css" : true,
-    "hide-empty-text": true,
-    "offscreen-css-text": "(inactive)",
-     "rewrite": {
-          "(.*) — Mozilla Firefox": "  $1",
-          "(.*) - fish": "> [$1]",
-      "(.*) - zsh": "> [$1]",
-      "(.*) - ghostty": "> [$1]"
-    }
+  "format": "{}",
+  "max-length": 150,
+  "separate-outputs": true,
+  "offscreen-css": true,
+  "hide-empty-text": true,
+  "expand": true,
+  "offscreen-css-text": "(inactive)",
+  "rewrite": {
+    "(.*) — Mozilla Firefox": "  $1",
+    "(.*) - fish": "> [$1]",
+    "(.*) - zsh": "> [$1]",
+    "(.*) - ghostty": "> [$1]"
+  }
 },
   
     
@@ -210,45 +206,31 @@
         "mopidy": "",
 		"mpv": "󰐹",
         "spotify": "",
-		"vlc": "󰕼",
+		"vlc": "󰕼"
 	},
 	"status-icons": {
 		"paused": "󰐎",
         "playing": "",
-        "stopped": "",
+        "stopped": ""
 	},
 	// "ignored-players": ["firefox"]
-	"max-length": 30,
+	"max-length": 50
 },
       
 "network": {
     "format": "{ifname}",
-    "format-wifi": "{icon}",
+    "format-wifi": "{signalStrength}%{icon}",
     "format-ethernet": "󰌘",
     "format-disconnected": "󰌙", 
     "tooltip-format": "{ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
     "format-linked": "󰈁 {ifname} (No IP)",
-    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+    "tooltip-format-wifi": "{essid} {icon} ",
     "tooltip-format-ethernet": "{ifname} 󰌘",
     "tooltip-format-disconnected": "󰌙 Disconnected",
-    "max-length": 50,
+    "max-length": 100,
     "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
 },
   
-"network#speed": {
-    "interval": 1,
-    "format": "{ifname}",
-    "format-wifi": "{icon}  {bandwidthUpBytes}  {bandwidthDownBytes}",
-    "format-ethernet": "󰌘   {bandwidthUpBytes}  {bandwidthDownBytes}",
-    "format-disconnected": "󰌙", 
-    "tooltip-format": "{ipaddr}",
-    "format-linked": "󰈁 {ifname} (No IP)",
-    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
-    "tooltip-format-ethernet": "{ifname} 󰌘",
-    "tooltip-format-disconnected": "󰌙 Disconnected",
-    "max-length": 50,
-    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
-},
       
     
 "temperature": {
@@ -265,7 +247,12 @@
       
 "tray": {
     "icon-size": 15,
-    "spacing": 8
+    "spacing": 8,
+    "show-passive-items": true,
+    "ignore-list": [
+        "blueman-applet",
+        "blueman-tray"
+    ]
 },
       
       
