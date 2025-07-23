@@ -43,3 +43,4 @@
 # resize-overlay-duration = 4s 200ms
 #
 theme = /home/felix/.config/ghostty/themes/wallust.conf
+background-opacity = 0.85

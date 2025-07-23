@@ -48,7 +48,7 @@ colors-ghostty = { template = "colors-ghostty.conf", target = "~/.config/ghostty
 colors-rofi = { template = "colors-rofi.rasi", target = "~/.cache/wallust/colors-rofi.rasi" }
 colors-swaync = { template = "colors-swaync.css", target = "~/.cache/wallust/colors-swaync.css" }
 gtk-colors = { template = "gtk-colors.css", target = "~/.cache/wallust/gtk-colors.css" }
-
+colors-neopywal = { template = "colors_neopywal.vim", target = "~/.cache/wal/colors-wal.vim" }
 
 # NOTE: prefer '' over "" for paths, avoids escaping.
 # template: A RELATIVE path that points to `~/.config/wallust/template` (depends on platform)
