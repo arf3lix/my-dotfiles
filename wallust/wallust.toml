@@ -42,16 +42,28 @@ palette = "dark"
 enabled = true
 
 [templates]
-colors-waybar = { template = "colors-waybar.css", target = "~/.cache/wallust/colors-waybar.css" }
-colors-hyprland = { template = "colors-hyprland.conf", target = "~/.cache/wallust/colors-hyprland.conf" }
-colors-ghostty = { template = "colors-ghostty.conf", target = "~/.config/ghostty/themes/wallust.conf" }
-colors-rofi = { template = "colors-rofi.rasi", target = "~/.cache/wallust/colors-rofi.rasi" }
-colors-swaync = { template = "colors-swaync.css", target = "~/.cache/wallust/colors-swaync.css" }
-gtk-colors = { template = "gtk-colors.css", target = "~/.cache/wallust/gtk-colors.css" }
-colors-neopywal = { template = "colors_neopywal.vim", target = "~/.cache/wal/colors-wal.vim" }
+waybar.template = "colors-waybar.css"
+waybar.target = "~/.cache/wallust/colors-waybar.css"
 
-# NOTE: prefer '' over "" for paths, avoids escaping.
-# template: A RELATIVE path that points to `~/.config/wallust/template` (depends on platform)
-# target: ABSOLUTE path in which to place a file with generated templated values.
-# ¡ If either one is a directory, then both SHOULD be one. !
-# zathura = { template = 'zathura', target = '~/.config/zathura/zathurarc' }
+hyprland.template = "colors-hyprland.conf"
+hyprland.target = "~/.cache/wallust/colors-hyprland.conf"
+
+ghostty.template = "colors-ghostty.conf"
+ghostty.target = "~/.config/ghostty/themes/wallust.conf"
+
+rofi.template = "colors-rofi.rasi"
+rofi.target = "~/.cache/wallust/colors-rofi.rasi"
+
+swaync.template = "colors-swaync.css"
+swaync.target = "~/.cache/wallust/colors-swaync.css"
+
+gtk.template = "gtk-colors.css"
+gtk.target = "~/.cache/wallust/gtk-colors.css"
+
+starship.template = "colors-starship.toml"
+starship.target = "~/.cache/wallust/colors-starship.toml"
+
+neopywal.template = "colors_neopywal.vim"
+neopywal.target = "~/.cache/wal/colors-wal.vim"
+
+

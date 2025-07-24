@@ -6,24 +6,15 @@ return {
     opts = {},
     config = function()
       require("neopywal").setup({
-
           use_wallust = true,
+          colorscheme_file = os.getenv("HOME") .. "/.cache/wallust/colors_neopywal.vim",
           transparent_background = true,
-          plugins = {
-            neotree = true,
-            lualine = true,
-          },
-          default_fileformats = true,
-          fileformats = {
-              python = false,
-          },
+          default_fileformats = false,
 
-          vim.cmd.colorscheme("neopywal"),
       })
-
       require("neopywal.theme.plugins.lualine").setup({
           -- Any of the color values can either be:
-          --   - A color exported by "get_colors()" (e.g.: `color8`)
+          --   - A color exported by "get_colors()" (e.g.: color8)
           --   - A hexadecimal color (e.g.: "#ff0000").
           --   - A function with an optional "C" parameter that returns one of the two options above.
           --     e.g: function(C) return C.color1 end
@@ -44,5 +35,6 @@ return {
               z = { "bold" },
           },
       })
+      vim.cmd.colorscheme("neopywal")
     end,
 }
