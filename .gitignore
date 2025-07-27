@@ -5,8 +5,6 @@ ZapZap
 activitywatch
 dconf
 dunst
-gtk*
-kanshi
 kde.org
 kitty
 mpv
@@ -29,4 +27,4 @@ mimeapps.list
 trashrc
 user-dirs.dirs
 user-dirs.locale
-
+obsidian

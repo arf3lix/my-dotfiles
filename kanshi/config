@@ -1,0 +1,16 @@
+#Perfil para cuando solo está la pantalla interna de la laptop
+# Este perfil se activa si SOLO eDP-1 está conectado.
+profile internal_only {
+  output eDP-1 enable
+  exec echo "eDP-1" > /tmp/main_monitor && /home/felix/.config/hypr/scripts/refresh.sh
+}
+
+# Perfil para cuando el dock está conectado (monitores externos + interno)
+# Este perfil se activa si eDP-1, DP-3 y DP-4 están TODOS conectados.
+profile docked {
+  output eDP-1 enable
+  output DP-3 enable
+  output DP-4 enable
+  exec echo "DP-3" > /tmp/main_monitor && /home/felix/.config/hypr/scripts/refresh.sh
+
+}

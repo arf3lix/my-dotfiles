@@ -18,4 +18,3 @@ fi
 echo "" >> "$STARSHIP_CONFIG"
 cat "$WALLUST_COLORS" >> "$STARSHIP_CONFIG"
 
-echo "✅ Paleta wallust aplicada a starship.toml"

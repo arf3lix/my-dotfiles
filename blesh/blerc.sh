@@ -46,6 +46,33 @@ color8="#848992"
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # === CONFIGURACIÓN DE FACES DE BLESH ===
 
 # Colores de edición y regiones

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/felix/.config/wpg/wallpapers/gear5-wallpaper.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0B1029",
+        "foreground": "#faffff",
+        "cursor": "#faffff"
+    },
+    "colors": {
+        "color0": "#0B1029",
+        "color1": "#A05BC2",
+        "color2": "#3BA7DF",
+        "color3": "#6A9AD9",
+        "color4": "#C1A1BF",
+        "color5": "#96A9DD",
+        "color6": "#A4D4F1",
+        "color7": "#e3e8ec",
+        "color8": "#151f51",
+        "color9": "#d663ff",
+        "color10": "#3adeff",
+        "color11": "#74c5ff",
+        "color12": "#ffbaff",
+        "color13": "#aad0ff",
+        "color14": "#b5ffff",
+        "color15": "#faffff"
+    }
+}

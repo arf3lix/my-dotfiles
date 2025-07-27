@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/felix/.config/wpg/wallpapers/mountain.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#14120f",
+        "foreground": "#c5ccdb",
+        "cursor": "#c5ccdb"
+    },
+    "colors": {
+        "color0": "#14120f",
+        "color1": "#566B8E",
+        "color2": "#677696",
+        "color3": "#847D83",
+        "color4": "#768299",
+        "color5": "#748AAF",
+        "color6": "#8A98B4",
+        "color7": "#c5ccdb",
+        "color8": "#898e99",
+        "color9": "#566B8E",
+        "color10": "#677696",
+        "color11": "#847D83",
+        "color12": "#768299",
+        "color13": "#748AAF",
+        "color14": "#8A98B4",
+        "color15": "#c5ccdb"
+    }
+}

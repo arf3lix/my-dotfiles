@@ -63,6 +63,9 @@ gtk.target = "~/.cache/wallust/gtk-colors.css"
 starship.template = "colors-starship.toml"
 starship.target = "~/.cache/wallust/colors-starship.toml"
 
+blesh.template = "colors-blesh.sh"
+blesh.target = "~/.cache/wallust/colors-blesh.sh"
+
 neopywal.template = "colors_neopywal.vim"
 neopywal.target = "~/.cache/wal/colors-wal.vim"
 

@@ -19,5 +19,4 @@ else
     echo "Insertando propiedad 'output': $MAIN_MONITOR (no existía previamente)"
     sed -i "0,/{/s/{/{\n\"output\": \"$MAIN_MONITOR\",/" "$BASE_CONFIG"
 fi
-notify-send "updating monitor" "from script" & 
-echo "✅ Configuración actualizada para el monitor: $MAIN_MONITOR"
+notify-send "updating monitor" "from script"

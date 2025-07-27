@@ -1,0 +1,191 @@
+/*
+* GTK Colors
+* Generated with Wallust
+*/
+
+/* Colores principales */
+@define-color accent_color {{color4}};
+@define-color accent_fg_color {{background}};
+@define-color accent_bg_color {{color4}};
+
+/* Ventanas */
+@define-color window_bg_color {{background}};
+@define-color window_fg_color {{foreground}};
+
+/* Barras de título */
+@define-color headerbar_bg_color {{color0}};
+@define-color headerbar_fg_color {{foreground}};
+@define-color headerbar_backdrop_color {{background}};
+
+/* Popovers y menús */
+@define-color popover_bg_color {{color0}};
+@define-color popover_fg_color {{foreground}};
+
+/* Vistas principales */
+@define-color view_bg_color {{background}};
+@define-color view_fg_color {{foreground}};
+
+/* Tarjetas */
+@define-color card_bg_color {{color0}};
+@define-color card_fg_color {{foreground}};
+
+/* Barras laterales */
+@define-color sidebar_bg_color {{background}};
+@define-color sidebar_fg_color {{foreground}};
+@define-color sidebar_border_color {{color8}};
+@define-color sidebar_backdrop_color {{background}};
+
+/* Colores de estado */
+@define-color success_color {{color2}};
+@define-color warning_color {{color3}};
+@define-color error_color {{color1}};
+@define-color destructive_color {{color9}};
+
+/* Colores de texto secundarios */
+@define-color dim_label_color {{color8}};
+@define-color secondary_label_color {{color7}};
+
+/* Bordes y sombras */
+@define-color border_color {{color8}};
+@define-color shade_color rgba(0, 0, 0, 0.1);
+@define-color scrollbar_outline_color {{color8}};
+
+/* Compatibilidad con temas antiguos */
+@define-color theme_bg_color {{background}};
+@define-color theme_fg_color {{foreground}};
+@define-color theme_base_color {{background}};
+@define-color theme_text_color {{foreground}};
+@define-color theme_selected_bg_color {{color4}};
+@define-color theme_selected_fg_color {{background}};
+@define-color theme_button_bg_color {{color0}};
+@define-color theme_button_fg_color {{foreground}};
+@define-color theme_button_border_color {{color8}};
+
+/* Colores específicos para inputs */
+@define-color entry_bg_color {{background}};
+@define-color entry_fg_color {{foreground}};
+@define-color entry_border_color {{color8}};
+
+/********************** General Typography */
+.large-title { 
+    font-weight: 300; 
+    font-size: 24pt; 
+    color: {{foreground}};
+}
+
+.title-1, .h1 { 
+    font-weight: 800; 
+    font-size: 20pt; 
+    color: {{foreground}};
+}
+
+.title-2, .h2 { 
+    font-weight: 800; 
+    font-size: 15pt; 
+    color: {{foreground}};
+}
+
+.title-3, .h3 { 
+    font-weight: 700; 
+    font-size: 15pt; 
+    color: {{foreground}};
+}
+
+.title-4, .h4 { 
+    font-weight: 700; 
+    font-size: 13pt; 
+    color: {{foreground}};
+}
+
+.heading { 
+    font-weight: 700; 
+    font-size: 11pt; 
+    color: {{foreground}};
+}
+
+.body { 
+    font-weight: 400; 
+    font-size: 11pt; 
+    color: {{foreground}};
+}
+
+.caption-heading { 
+    font-weight: 700; 
+    font-size: 9pt; 
+    color: {{foreground}};
+}
+
+.caption { 
+    font-weight: 400; 
+    font-size: 9pt; 
+    color: {{color8}};
+}
+
+.category-label { 
+    color: {{color4}}; 
+    font-weight: 700; 
+}
+
+/*********** Firefox */
+#MozillaGtkWidget.background { 
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0; 
+    background-color: {{background}};
+}
+
+#MozillaGtkWidget.background scrollbar { 
+    background-color: transparent; 
+    border-color: transparent; 
+}
+
+/* Scrollbars personalizadas */
+scrollbar {
+    background-color: {{background}};
+}
+
+scrollbar slider {
+    background-color: {{color8}};
+    border-radius: 6px;
+}
+
+scrollbar slider:hover {
+    background-color: {{color4}};
+}
+
+/* Botones */
+button {
+    background-color: {{color0}};
+    color: {{foreground}};
+    border-color: {{color8}};
+}
+
+button:hover {
+    background-color: {{color8}};
+}
+
+button:active {
+    background-color: {{color4}};
+    color: {{background}};
+}
+
+/* Entradas de texto */
+entry {
+    background-color: {{background}};
+    color: {{foreground}};
+    border-color: {{color8}};
+}
+
+entry:focus {
+    border-color: {{color4}};
+}
+
+/* Menús */
+menu {
+    background-color: {{color0}};
+    color: {{foreground}};
+}
+
+menuitem:hover {
+    background-color: {{color4}};
+    color: {{background}};
+}
