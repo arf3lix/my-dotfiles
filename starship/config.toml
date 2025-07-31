@@ -71,48 +71,48 @@ format = '[[($all_status$ahead_behind )](fg:color_fg bg:color_3)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:color_4"
+format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
 
 [c]
 symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:color_4"
+format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
 
 [cpp]
 symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:color_4"
+format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:color_4"
+format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:color_4"
+format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
 
 [php]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:color_4"
+format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
 
 [java]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:color_4"
+format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
 
 [kotlin]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:color_4"
+format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
 
 [haskell]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:color_4"
+format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
 
 [python]
 symbol = ""
@@ -121,16 +121,16 @@ format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
 
 [docker_context]
 symbol = ""
-style = "bg:color_bg3"
-format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
+style = "bg:color_5"
+format = '[[ $symbol( $context) ](fg:#83a598 bg:color_5)]($style)'
 
 [conda]
-style = "bg:color_bg3"
-format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg3)]($style)'
+style = "bg:color_5"
+format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_5)]($style)'
 
 [pixi]
-style = "bg:color_bg3"
-format = '[[ $symbol( $version)( $environment) ](fg:color_fg0 bg:color_bg3)]($style)'
+style = "bg:color_5"
+format = '[[ $symbol( $version)( $environment) ](fg:color_fg bg:color_5)]($style)'
 
 [time]
 disabled = false
@@ -225,23 +225,71 @@ format = '[━━━━━━━ ](bold fg:color_1)'
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [palettes.wallust]
-color_bg = '#000005'
-color_fg = '#D6DBE5'
-color_cursor = '#8C8C96'
-color_0 = '#000005'
-color_1 = '#323A49'
-color_2 = '#423E48'
-color_3 = '#5A5D6B'
-color_4 = '#566B8E'
-color_5 = '#768299'
-color_6 = '#8A98B4'
-color_7 = '#BCC3D1'
-color_8 = '#848992'
-color_9 = '#323A49'
-color_10 = '#423E48'
-color_11 = '#5A5D6B'
-color_12 = '#566B8E'
-color_13 = '#768299'
-color_14 = '#8A98B4'
-color_15 = '#BCC3D1'
+color_bg = '#232425'
+color_fg = '#EAECED'
+color_cursor = '#979EA6'
+color_0 = '#4E4F51'
+color_1 = '#565A62'
+color_2 = '#6F7782'
+color_3 = '#AB7F89'
+color_4 = '#86909C'
+color_5 = '#97A5AC'
+color_6 = '#C2C9CC'
+color_7 = '#D8DCDD'
+color_8 = '#979A9B'
+color_9 = '#565A62'
+color_10 = '#6F7782'
+color_11 = '#AB7F89'
+color_12 = '#86909C'
+color_13 = '#97A5AC'
+color_14 = '#C2C9CC'
+color_15 = '#D8DCDD'
