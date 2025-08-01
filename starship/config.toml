@@ -35,7 +35,7 @@ palette = 'wallust'
 
 [os]
 disabled = false
-style = "bg:color_1 fg:color_fg"
+style = "bg:color_1 fg:color_bg"
 format = '[ $symbol]($style)'
 
 [os.symbols]
@@ -43,12 +43,12 @@ Arch = "󰣇"
 
 [username]
 show_always = true
-style_user = "bg:color_1 fg:color_fg"
-style_root = "bg:color_1 fg:color_fg"
+style_user = "bg:color_1 fg:color_bg"
+style_root = "bg:color_1 fg:color_bg"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:color_fg bg:color_2"
+style = "fg:color_bg bg:color_2"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -63,61 +63,61 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 style = "bg:color_3"
-format = '[[ $symbol $branch ](fg:color_fg bg:color_3)]($style)'
+format = '[[ $symbol $branch ](fg:color_bg bg:color_3)]($style)'
 
 [git_status]
 style = "bg:color_3"
-format = '[[($all_status$ahead_behind )](fg:color_fg bg:color_3)]($style)'
+format = '[[($all_status$ahead_behind )](fg:color_bg bg:color_3)]($style)'
 
 [nodejs]
 symbol = ""
 style = "bg:color_4"
-format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
+format = '[[ $symbol( $version) ](fg:color_bg bg:color_4)]($style)'
 
 [c]
 symbol = " "
 style = "bg:color_4"
-format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
+format = '[[ $symbol( $version) ](fg:color_bg bg:color_4)]($style)'
 
 [cpp]
 symbol = " "
 style = "bg:color_4"
-format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
+format = '[[ $symbol( $version) ](fg:color_bg bg:color_4)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:color_4"
-format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
+format = '[[ $symbol( $version) ](fg:color_bg bg:color_4)]($style)'
 
 [golang]
 symbol = ""
 style = "bg:color_4"
-format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
+format = '[[ $symbol( $version) ](fg:color_bg bg:color_4)]($style)'
 
 [php]
 symbol = ""
 style = "bg:color_4"
-format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
+format = '[[ $symbol( $version) ](fg:color_bg bg:color_4)]($style)'
 
 [java]
 symbol = ""
 style = "bg:color_4"
-format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
+format = '[[ $symbol( $version) ](fg:color_bg bg:color_4)]($style)'
 
 [kotlin]
 symbol = ""
 style = "bg:color_4"
-format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
+format = '[[ $symbol( $version) ](fg:color_bg bg:color_4)]($style)'
 
 [haskell]
 symbol = ""
 style = "bg:color_4"
-format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
+format = '[[ $symbol( $version) ](fg:color_bg bg:color_4)]($style)'
 
 [python]
 symbol = ""
 style = "bg:color_4"
-format = '[[ $symbol( $version) ](fg:color_fg bg:color_4)]($style)'
+format = '[[ $symbol( $version) ](fg:color_bg bg:color_4)]($style)'
 
 [docker_context]
 symbol = ""
@@ -130,7 +130,7 @@ format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_5)]($style)'
 
 [pixi]
 style = "bg:color_5"
-format = '[[ $symbol( $version)( $environment) ](fg:color_fg bg:color_5)]($style)'
+format = '[[ $symbol( $version)( $environment) ](fg:color_bg bg:color_5)]($style)'
 
 [time]
 disabled = false
@@ -273,23 +273,30 @@ format = '[━━━━━━━ ](bold fg:color_1)'
 
 
 
+
+
+
+
+
+
+
 [palettes.wallust]
-color_bg = '#232425'
-color_fg = '#EAECED'
-color_cursor = '#979EA6'
-color_0 = '#4E4F51'
-color_1 = '#565A62'
-color_2 = '#6F7782'
-color_3 = '#AB7F89'
-color_4 = '#86909C'
-color_5 = '#97A5AC'
-color_6 = '#C2C9CC'
-color_7 = '#D8DCDD'
-color_8 = '#979A9B'
-color_9 = '#565A62'
-color_10 = '#6F7782'
-color_11 = '#AB7F89'
-color_12 = '#86909C'
-color_13 = '#97A5AC'
-color_14 = '#C2C9CC'
-color_15 = '#D8DCDD'
+color_bg = '#1A1B26'
+color_fg = '#C0CAF5'
+color_cursor = '#C0CAF5'
+color_0 = '#414868'
+color_1 = '#F7768E'
+color_2 = '#9ECE6A'
+color_3 = '#E0AF68'
+color_4 = '#7AA2F7'
+color_5 = '#BB9AF7'
+color_6 = '#7DCFFF'
+color_7 = '#A9B1D6'
+color_8 = '#414868'
+color_9 = '#F7768E'
+color_10 = '#9ECE6A'
+color_11 = '#E0AF68'
+color_12 = '#7AA2F7'
+color_13 = '#BB9AF7'
+color_14 = '#7DCFFF'
+color_15 = '#C0CAF5'

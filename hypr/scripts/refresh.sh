@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-wal -i "/home/felix/.current_wallpaper" -s
+# wal -i "/home/felix/.current_wallpaper" -s
 
 killall hyprpaper
 killall waybar

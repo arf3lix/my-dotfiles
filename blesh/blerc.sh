@@ -1,14 +1,21 @@
-color_bg="#232425"
-color_fg="#EAECED"
-color0="#4E4F51"
-color1="#565A62"
-color2="#6F7782"
-color3="#AB7F89"
-color4="#86909C"
-color5="#97A5AC"
-color6="#C2C9CC"
-color7="#D8DCDD"
-color8="#979A9B"
+color_bg="#1A1B26"
+color_fg="#C0CAF5"
+color0="#414868"
+color1="#F7768E"
+color2="#9ECE6A"
+color3="#E0AF68"
+color4="#7AA2F7"
+color5="#BB9AF7"
+color6="#7DCFFF"
+color7="#A9B1D6"
+color8="#414868"
+
+
+
+
+
+
+
 
 
 
