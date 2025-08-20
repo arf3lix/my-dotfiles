@@ -20,14 +20,11 @@ window#waybar {
   border-radius: 10px;
 }
 
-window#waybar.hidden {
-  opacity: 0.2;
-}
-
-window#waybar.fullscreen {
-    opacity: 0;
-    transition: opacity 0.3s;
-}
+/* window#waybar.hidden { */
+/*   opacity: 0.2; */
+/* } */
+/**/
+/**/
 
 
 
@@ -47,13 +44,13 @@ window#waybar.fullscreen {
 	padding-left: 10px;
 }
 
-#waybar.empty #window {
-    background: none;
-    border: none;
-    box-shadow: none;
-}
-
-
+/* #waybar.empty #window { */
+/*     background: none; */
+/*     border: none; */
+/*     box-shadow: none; */
+/* } */
+/**/
+/**/
 
 
 
@@ -123,6 +120,21 @@ window#waybar.fullscreen {
 
 
 
+window#waybar.fullscreen {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+
+#window {
+    font-size: 0; /* por si algo intenta mostrarse */
+    background: transparent;
+    color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
 
 
 
@@ -151,7 +163,7 @@ window#waybar.fullscreen {
 #backlight,
 #battery,
 #language {
-  color: @color6;
+  color: @color4;
 }
 
 
@@ -175,21 +187,27 @@ window#waybar.fullscreen {
   color: @color6;
 }
 
-#cpu {
+#cpu,
+#disk,
+#temperature,
+#memory,
+#network {
+  color: @color5;
+}
+
+#custom-keyboard {
   color: @color3;
 }
 
-#custom-keyboard,
-#memory {
-  color: @color3;
+
+#network {
+  padding-right: 5px;
 }
 
-#disk {
-  color: @color3;
-}
-
-#temperature {
-  color: @color3;
+#network.disconnected,
+#network.disabled {
+  background-color: @color5;
+  color: @text;
 }
 
 #temperature.critical {
@@ -205,12 +223,12 @@ window#waybar.fullscreen {
 }
 
 #workspaces {
-  color: @color4
+  color: @color5;
 }
 
 
 #workspaces button {
-    color: @color4;
+    color: @color5;
     box-shadow: none;
 	  text-shadow: none;
     border-radius: 9px;
@@ -233,7 +251,7 @@ window#waybar.fullscreen {
 
 
 #workspaces button.active {
-	color: @color4;
+	color: @color5;
   	border-radius: 10px;
     padding-left: 4px;
     padding-right: 6px;
@@ -311,16 +329,6 @@ window#waybar.fullscreen {
   color:@color1;
 }
 
-#network {
-  color: @color3;
-  padding-right: 5px;
-}
-
-#network.disconnected,
-#network.disabled {
-  background-color: @color5;
-  color: @text;
-}
 #wireplumber-slider slider {
 	min-width: 0px;
 	min-height: 0px;
